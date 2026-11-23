@@ -1,0 +1,6 @@
+{
+  "_help": "Totals from your survey, by country of residence. Use the country names exactly as they appear in data/world.json (e.g. United Arab Emirates, United States, United Kingdom, Türkiye). Countries with fewer than 10 members are shown as 'Fewer than 10'. events: number of events held per country.",
+  "updated": "",
+  "members": {},
+  "events": {}
+}

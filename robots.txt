@@ -1,0 +1,6 @@
+# DRAFT: blocks search engines. When going live, replace with:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://letstalksocialwithhebz.com/sitemap.xml
+User-agent: *
+Disallow: /

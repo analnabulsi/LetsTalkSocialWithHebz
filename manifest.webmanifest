@@ -1,0 +1,15 @@
+{
+  "name": "Let's Talk Social with Hebz",
+  "short_name": "Let's Talk",
+  "description": "A community of 4,000+ marketers and entrepreneurs in 53 countries.",
+  "start_url": "./?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#C8284F",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

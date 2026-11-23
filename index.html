@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- DRAFT: login screen is switched on/off by "draftMode" in data/config.json. When going live, delete the robots line below so Google can index the site. -->
+<meta name="robots" content="noindex, nofollow">
+<script src="js/gate.js"></script>
+<title>Let's Talk Social with Hebz — social media community since 2019</title>
+<meta name="description" content="A community of 4,000+ marketers and entrepreneurs in 53 countries. Social media news, trends, workshops, case studies and tips.">
+<meta name="theme-color" content="#C8284F">
+<link rel="canonical" href="https://letstalksocialwithhebz.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Let's Talk Social with Hebz">
+<meta property="og:description" content="Take your social media expertise to the next level with 4,000+ marketers in 53 countries.">
+<meta property="og:image" content="assets/icons/og-image.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&amp;family=Playfair+Display:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+<script src="js/map.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#home" aria-label="Let's Talk Social with Hebz, home">
+      <span class="brand-serif">Let's Talk Social</span>
+      <span class="brand-script">with Hebz</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="sr-only">Menu</span>
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#map">Community</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-brand nav-cta" data-link="whatsapp" href="#join">Join the community</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO / PROFILE -->
+<section id="home" class="wrap section-first">
+  <div class="card profile">
+    <div class="profile-cover" aria-hidden="true"><span class="cover-circle"></span></div>
+    <div class="profile-body">
+      <div class="profile-id">
+        <div class="avatar-ring"><img class="avatar" src="assets/hebz.jpg" alt="Hebz, founder of Let's Talk Social" width="140" height="140" data-fallback></div>
+        <div>
+          <p class="muted handle">@letstalksocialwithhebz · Community since 2019</p>
+          <h1 class="display">Let's <span class="accent">talk social.</span></h1>
+          <p class="lead">Take your social media expertise to the next level with 4,000+ marketers and entrepreneurs.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-dark" data-link="whatsapp" href="#join">Join on WhatsApp</a>
+        <button class="btn btn-outline" type="button" data-share>Invite a marketer</button>
+      </div>
+    </div>
+    <dl class="stats">
+      <div><dt>members</dt><dd data-stat="members">4,000+</dd></div>
+      <div><dt>countries</dt><dd data-stat="countries">53</dd></div>
+      <div><dt>since</dt><dd data-stat="since">2019</dd></div>
+      <div data-stat-wrap="events" hidden><dt>events hosted</dt><dd data-stat="events"></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ABOUT + HIGHLIGHTS -->
+<section id="about" class="wrap section" aria-labelledby="about-h">
+  <div class="split">
+    <div class="split-text">
+      <p class="script-kicker">about us</p>
+      <h2 id="about-h" class="h2">From one idea in 2019 to 4,000+ members across 53 countries.</h2>
+      <p class="body-lg">We grow stronger with your support. Invite your fellow marketers and entrepreneurs and pay it forward today.</p>
+    </div>
+    <div class="card highlights">
+      <div class="highlight-tabs" role="tablist" aria-label="What members get">
+        <button role="tab" type="button" id="hl-0" aria-controls="hl-panel" aria-selected="true" data-body="Social media news and platform updates, the day they drop."><span class="ring"><span>News</span></span>News &amp; updates</button>
+        <button role="tab" type="button" id="hl-1" aria-controls="hl-panel" aria-selected="false" tabindex="-1" data-body="The social media industry trends worth acting on."><span class="ring"><span>Trends</span></span>Industry trends</button>
+        <button role="tab" type="button" id="hl-2" aria-controls="hl-panel" aria-selected="false" tabindex="-1" data-body="Hands-on social media workshops and members-only events."><span class="ring"><span>Live</span></span>Workshops &amp; events</button>
+        <button role="tab" type="button" id="hl-3" aria-controls="hl-panel" aria-selected="false" tabindex="-1" data-body="Real social media case studies and campaigns, unpacked."><span class="ring"><span>Cases</span></span>Case studies</button>
+        <button role="tab" type="button" id="hl-4" aria-controls="hl-panel" aria-selected="false" tabindex="-1" data-body="Social media tricks and tips you can use this week."><span class="ring"><span>Tips</span></span>Tricks &amp; tips</button>
+      </div>
+      <div class="story" id="hl-panel" role="tabpanel" aria-labelledby="hl-0">
+        <div class="story-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="story-label">News &amp; updates</p>
+        <p class="story-body">Social media news and platform updates, the day they drop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section id="join" class="wrap section" aria-labelledby="join-h">
+  <h2 id="join-h" class="h2">Get involved</h2>
+  <ul class="link-grid" role="list">
+    <li><a class="link-card" data-link="whatsapp" href="#"><span class="dot dot-brand" aria-hidden="true"></span><span class="lc-text"><strong>WhatsApp community</strong><span>News, trends and daily conversation</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+    <li><a class="link-card" data-link="jobs" href="#"><span class="dot" aria-hidden="true"></span><span class="lc-text"><strong>Jobs, freelance &amp; internships</strong><span>Request access</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+    <li><a class="link-card" href="#events"><span class="dot" aria-hidden="true"></span><span class="lc-text"><strong>Trainings &amp; networking events</strong><span>For community members</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+    <li><a class="link-card" data-link="survey" href="#"><span class="dot" aria-hidden="true"></span><span class="lc-text"><strong>Have ideas or want to support?</strong><span>Take the survey</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+    <li><a class="link-card" data-link="testimonial" href="#"><span class="dot" aria-hidden="true"></span><span class="lc-text"><strong>Love the community?</strong><span>Leave a testimonial (Google sign-in)</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+    <li><a class="link-card" href="#contact"><span class="dot" aria-hidden="true"></span><span class="lc-text"><strong>Connect with Hebz</strong><span>Let's get to know each other</span></span><svg class="lc-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+  </ul>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="wrap section" aria-labelledby="events-h">
+  <div class="section-head">
+    <div>
+      <h2 id="events-h" class="h2">Events</h2>
+      <p class="body">Upcoming events are for members: booking links are shared in our WhatsApp community. Past events are open for everyone to see.</p>
+    </div>
+    <div class="segmented" role="tablist" aria-label="Event list">
+      <button type="button" role="tab" id="tab-up" aria-controls="panel-up" aria-selected="true">Upcoming</button>
+      <button type="button" role="tab" id="tab-past" aria-controls="panel-past" aria-selected="false" tabindex="-1">Past events</button>
+    </div>
+  </div>
+  <div id="panel-up" role="tabpanel" aria-labelledby="tab-up">
+    <div class="event-grid" data-events="upcoming"></div>
+    <p class="empty" data-empty="upcoming" hidden>New events are announced in the WhatsApp community first. <a data-link="whatsapp" href="#join">Join to hear about the next one.</a></p>
+  </div>
+  <div id="panel-past" role="tabpanel" aria-labelledby="tab-past" hidden>
+    <div class="past-list" data-events="past"></div>
+    <p class="empty" data-empty="past" hidden>Event recaps are coming soon.</p>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map" class="wrap section" aria-labelledby="map-h">
+  <p class="script-kicker">our community</p>
+  <div class="section-head">
+    <div>
+      <h2 id="map-h" class="h2">4,000+ members in 53 countries</h2>
+      <p class="body">The darker the country, the more members live there. Hover or tap a country to see the number.</p>
+    </div>
+    <div class="segmented" role="group" aria-label="Map view">
+      <button type="button" data-map-mode="members" aria-pressed="true">Members</button>
+      <button type="button" data-map-mode="events" aria-pressed="false">Events held</button>
+    </div>
+  </div>
+  <div class="card map-card">
+    <div class="map-scroll">
+      <div class="map-stage" id="world-map" aria-hidden="true">
+        <p class="map-loading">Loading map…</p>
+        <div class="map-tip" hidden><strong></strong><span></span></div>
+      </div>
+    </div>
+    <p class="map-hint muted">Swipe sideways to explore the map.</p>
+    <div class="map-legend" id="map-legend"></div>
+  </div>
+  <div class="map-below">
+    <div class="card map-top">
+      <h3 class="h3">Top countries</h3>
+      <div class="top-grid" id="map-top"></div>
+      <p class="empty" id="map-empty" hidden>Country totals are coming soon. <a data-link="survey" href="#">Add your country in our survey.</a></p>
+    </div>
+    <div class="card card-dark map-note">
+      <p class="eyebrow">How we count</p>
+      <p>Totals only, never names. Based on the country of residence members choose to share in our survey. Countries with fewer than 10 members show as "Fewer than 10".</p>
+      <a data-link="survey" href="#">Add your country →</a>
+    </div>
+  </div>
+  <p class="fineprint">Map data: Natural Earth. Borders shown for illustration only.</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="wrap section" aria-labelledby="t-h">
+  <div class="card testimonials">
+    <div class="t-intro">
+      <p class="script-kicker">testimonials</p>
+      <h2 id="t-h" class="h2">What our members say</h2>
+      <p class="muted">Shared through our testimonial form and published with permission.</p>
+      <a class="text-link" data-link="testimonial" href="#">Leave a testimonial →</a>
+    </div>
+    <div class="t-stage" aria-roledescription="carousel" aria-label="Member testimonials">
+      <figure class="t-slide" aria-live="polite">
+        <blockquote class="t-quote">Testimonials from our members will appear here soon.</blockquote>
+        <figcaption class="t-who"><span class="t-avatar" aria-hidden="true"></span><span><strong class="t-name">Let's Talk Social</strong><span class="t-role muted">Community</span></span></figcaption>
+      </figure>
+      <div class="t-controls" hidden>
+        <div class="t-dots" role="group" aria-label="Choose testimonial"></div>
+        <div class="t-arrows">
+          <button type="button" class="round-btn" data-t="prev" aria-label="Previous testimonial"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button type="button" class="round-btn round-dark" data-t="next" aria-label="Next testimonial"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="wrap section" aria-labelledby="g-h">
+  <div class="section-head">
+    <h2 id="g-h" class="h2">Gallery</h2>
+    <p class="muted">Public highlights here. Full albums are shared with members in the WhatsApp community.</p>
+  </div>
+  <div class="gallery" id="gallery-grid">
+    <a class="g-members" data-link="whatsapp" href="#join">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <strong>Members' albums</strong>
+      <span>Full albums are shared in the WhatsApp community</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="wrap section section-last" aria-labelledby="c-h">
+  <div class="contact">
+    <div>
+      <h2 id="c-h" class="contact-title">Let's talk social</h2>
+      <p class="contact-script">with Hebz</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-white" data-link="contact" href="#">Contact us</a>
+      <a class="btn btn-ghost-white" data-link="instagram" href="#">Instagram</a>
+      <a class="btn btn-ghost-white" data-link="linkedin" href="#">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span data-year>2026</span> Let's Talk Social with Hebz · Licensed in the UAE</span>
+    <nav aria-label="Legal" class="footer-links">
+      <a href="legal.html#privacy">Privacy policy</a>
+      <a href="legal.html#cookies">Cookie policy</a>
+      <a href="legal.html#terms">Terms &amp; conditions</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="notice" id="cookie-notice" role="region" aria-label="Cookie notice" hidden>
+  <p>No tracking cookies here. We only remember small choices, like closing this note. <a href="legal.html#cookies">Cookie policy</a></p>
+  <button type="button" class="btn btn-white btn-sm" data-notice-close>Got it</button>
+</div>
+
+<div class="install" id="install-card" role="dialog" aria-labelledby="install-h" hidden>
+  <div class="install-row">
+    <img src="assets/icons/icon-192.png" alt="" width="56" height="56">
+    <div><strong id="install-h">Add Let's Talk Social to your phone</strong><span>One tap to events, updates and the map. No app store needed.</span></div>
+  </div>
+  <p class="install-ios" hidden>On iPhone: tap <strong>Share</strong>, then <strong>Add to Home Screen</strong>.</p>
+  <div class="install-actions">
+    <button type="button" class="btn btn-outline btn-sm" data-install="later">Not now</button>
+    <button type="button" class="btn btn-brand btn-sm" data-install="go">Install</button>
+  </div>
+</div>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

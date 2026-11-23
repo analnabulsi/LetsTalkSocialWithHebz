@@ -1,0 +1,5 @@
+{
+  "_help": "upcoming: shown as members-only cards (never put Stripe links here). past: each gets a recap page at event.html?id=YOUR-ID. Dates use YYYY-MM-DD.",
+  "upcoming": [],
+  "past": []
+}

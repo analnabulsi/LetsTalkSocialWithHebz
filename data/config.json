@@ -1,0 +1,22 @@
+{
+  "_help": "Paste your links between the quotes. Leave a link empty to hide or disable its button. Only https:// links are used.",
+  "draftMode": true,
+  "_draftModeHelp": "true = visitors must sign in to see the site (draft). false = login screen is off and the site is open to everyone.",
+  "links": {
+    "whatsapp": "",
+    "jobs": "",
+    "survey": "",
+    "testimonial": "",
+    "contact": "https://letstalksocialwithhebz.com/contact/",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "stats": {
+    "members": "4,000+",
+    "countries": "53",
+    "since": "2019",
+    "events": ""
+  },
+  "coverImage": "",
+  "shareText": "Join me in Let's Talk Social with Hebz, a community of 4,000+ marketers and entrepreneurs in 53 countries."
+}

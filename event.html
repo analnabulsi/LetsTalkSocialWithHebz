@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- DRAFT: login switched by "draftMode" in data/config.json. When going live, delete the robots line below. -->
+<meta name="robots" content="noindex, nofollow">
+<script src="js/gate.js"></script>
+<title>Event recap — Let's Talk Social with Hebz</title>
+<meta name="description" content="Recap of a Let's Talk Social with Hebz community event.">
+<meta name="theme-color" content="#C8284F">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&amp;family=Playfair+Display:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+<script src="js/event.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="page-head">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="./"><span class="brand-serif">Let's Talk Social</span><span class="brand-script">with Hebz</span></a>
+    <a class="btn btn-outline btn-sm" href="./#events">← All events</a>
+  </nav>
+</header>
+
+<main id="main" class="page">
+  <p class="crumbs"><a href="./#events">Events</a> / Past events / <span data-e="crumb">Recap</span></p>
+  <div class="chips" data-e="chips"></div>
+  <h1 class="page-title" data-e="title">Event recap</h1>
+  <div class="hero-photo" data-e="cover" role="img" aria-label="Event photo"></div>
+
+  <div class="recap">
+    <article>
+      <h2 class="h2">The recap</h2>
+      <div data-e="recap"><p>Loading…</p></div>
+      <div data-e="takeaways-wrap" hidden>
+        <h3 class="h3 takeaways-h">Key takeaways</h3>
+        <ol data-e="takeaways"></ol>
+      </div>
+    </article>
+    <aside>
+      <div class="side-card" data-e="speakers-wrap" hidden>
+        <h2>Speakers</h2>
+        <div data-e="speakers"></div>
+      </div>
+      <div class="side-card" data-e="partners-wrap" hidden>
+        <h2>Partners</h2>
+        <p class="partners" data-e="partners"></p>
+      </div>
+      <a class="side-card card-dark members-card" data-link="whatsapp" href="./#join">
+        <strong>Slides &amp; full album</strong>
+        <span>Shared with members in the WhatsApp community</span>
+      </a>
+    </aside>
+  </div>
+
+  <div data-e="moments-wrap" hidden>
+    <h2 class="h2 moments-h">Moments</h2>
+    <div class="moments" data-e="moments"></div>
+  </div>
+
+  <div class="cta-band">
+    <div><h2>Don't miss the next one.</h2><p>Events are for community members. Joining is free.</p></div>
+    <a class="btn btn-white" data-link="whatsapp" href="./#join">Join the community</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span data-year>2026</span> Let's Talk Social with Hebz · Licensed in the UAE</span>
+    <nav aria-label="Legal" class="footer-links">
+      <a href="legal.html#privacy">Privacy policy</a>
+      <a href="legal.html#cookies">Cookie policy</a>
+      <a href="legal.html#terms">Terms &amp; conditions</a>
+    </nav>
+  </div>
+</footer>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
