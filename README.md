@@ -41,6 +41,15 @@ printf 'lts-draft-v1|heba|YOUR-NEW-PASSWORD' | shasum -a 256
 ```
 Copy the long code it prints into `HASH` at the top of `js/gate.js` (the username goes in lowercase). The password itself is never stored, only this code.
 
+**Share link (signs in automatically):** add `#access=` and the key to your site address, for example:
+```
+https://YOUR-USERNAME.github.io/YOUR-REPO/#access=JRv61nLLXTaen4CIfM-bczeG
+```
+* Whoever opens it is signed in on that device. The key then disappears from the address bar, so it isn't copied on by accident.
+* **Anyone who has the link can see the draft**, so send it privately (for example in a direct message, not a group).
+* **To cancel the link,** make a new key with the Terminal commands at the top of `js/gate.js` and paste the new code into `ACCESS_HASH`. Old links stop working, and the username and password keep working.
+* **To turn share links off,** set `ACCESS_HASH` to `''`.
+
 **Need real protection for a draft?** Host the draft on Cloudflare Pages with Cloudflare Access instead. It's free for small teams, and reviewers sign in with an email code.
 
 ### Going live for real (so Google can list the site)

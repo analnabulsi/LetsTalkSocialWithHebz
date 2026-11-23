@@ -5,11 +5,19 @@
 
    Change the login: run in Terminal (Mac):
      printf 'lts-draft-v1|USERNAME|PASSWORD' | shasum -a 256
-   and paste the result into HASH below (username in lowercase). */
+   and paste the result into HASH below (username in lowercase).
+
+   SHARE LINK (auto sign-in): https://YOUR-SITE/#access=YOUR-KEY
+   Make a new key / cancel the old link: run in Terminal:
+     KEY=$(openssl rand -base64 18 | tr '+/' '-_' | tr -d '=') ; echo $KEY
+     printf "lts-access-v1|$KEY" | shasum -a 256
+   Paste the second result into ACCESS_HASH below. Old links stop working.
+   Set ACCESS_HASH to '' to turn share links off. */
 (function () {
   'use strict';
   var SALT = 'lts-draft-v1';
   var HASH = 'b0a1d9229afa9bcb650fcf76fbbcce56d3ef37118f2d39e203e4b79c449150b2';
+  var ACCESS_HASH = 'adb1c173e0f6edad9b8eec5d3b55bcf178e2995508f2389a322d27f68315fe4f';
   var KEY = 'lts-draft-ok';
 
   var root = document.documentElement;
@@ -38,7 +46,20 @@
 
   function whenReady(fn) { if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn); else fn(); }
 
-  settled.then(function (state) {
+  // Share link: #access=KEY in the address signs the visitor in and is then removed from the address bar.
+  var linkCheck = (function () {
+    var m = /(?:^#|&)access=([A-Za-z0-9_-]{16,64})/.exec(location.hash || '');
+    if (!m || !ACCESS_HASH) return Promise.resolve(false);
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+    return sha256('lts-access-v1|' + m[1]).then(function (h) {
+      if (h !== ACCESS_HASH) return false;
+      try { localStorage.setItem(KEY, HASH); } catch (e) {}
+      return true;
+    }).catch(function () { return false; });
+  })();
+
+  Promise.all([settled, linkCheck]).then(function (r) {
+    var state = r[1] ? 'open' : r[0];
     if (state === 'open') {
       root.classList.remove('lts-locked');
       var m = document.querySelector('meta[name="robots"]'); if (m) m.remove();
